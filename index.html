@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/to-do-list.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7c4dc178f1.js" crossorigin="anonymous"></script>
+
+  </script>
+  <title>TO-DO-List</title>
+</head>
+
+<body>
+  <h1>TODo List</h1>
+  <!-- main tag is for the container -->
+  <main>
+    <!-- section tag is for the adding input to the task  -->
+    <section class="inputContainer">
+      <i class="fa-solid fa-scroll"></i>
+      <input type="text" placeholder="Add a task" data-task="input" id="input" class="inputData" required>
+    </section>
+    <i class="fa-solid fa-check-double dobCheck" style="color: #828282;"></i><span>completed all tasks</span>
+    <div class="space"></div>
+    <span class="deltAll">Clear completed</span>
+    <hr>
+
+    <!-- here unordered list for get a task in order and mark as check and delete -->
+    <ul id="list">
+    </ul>
+    <hr>
+    <div class="complete">
+      <p>Total tasks left:<span id="taskCount">0</span></p>
+      <span class="incomplete" style="margin-left: 0px;">Incomplete</span>
+      <span class="completed">Completed</span>
+    </div>
+
+    <script src="script.js"></script>
+  </main>
+</body>
+
+</html>
